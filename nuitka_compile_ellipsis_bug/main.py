@@ -1,5 +1,10 @@
-from nodes import Ellipsis
+from dataclasses import dataclass
+
+
+@dataclass
+class Ellipsis:
+    ...
 
 
 if __name__ == '__main__':
-    print('In main:', Ellipsis.__name__)
+    print(Ellipsis.__name__)
